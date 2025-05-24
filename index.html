@@ -20,12 +20,17 @@
 
   <header>
     <nav class="navbar">
-      <div class="nav-logo"><a href="watewise.html">WasteWise</a></div>
+      <div class="nav-logo"><a href="index.html">WasteWise</a></div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="#">Customers</a></li>
+        <li><a href="uploads.html">Uploads</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Contact</a></li>
+      </ul>
+
+      <ul class="nav-auth">
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
       </ul>
     </nav>
   
@@ -44,17 +49,58 @@
   </header>
 
   <main>
+    <article>
+      <section class="fact1">
+        <img src="assets/image/garbage.png" alt="gunung sampah">
+        <h3>Menghasilkan Sekitar 175.000 Ton Sampah</h3>
+        <p>
+          Berdasarkan data KLHK, setiap hari Indonesia memproduksi sekitar 175.000 ton sampah dari seluruh sumber, baik rumah tangga, industri, maupun komersial. Volume ini terus meningkat seiring pertumbuhan populasi dan konsumsi masyarakat.
+        </p>
+      </section>
+      <section class="fact2">
+        <img src="assets/image/trash.png" alt="trash">
+        <h3>60-70% Sampah Tidak Dipilah</h3>
+        <p>
+          Menurut KLHK (2023) dan Bappenas, lebih dari 60% sampah di Indonesia belum dipilah dari sumbernya (rumah tangga, kantor, dll). Akibatnya, sampah organik dan anorganik tercampur, menyulitkan proses daur ulang dan mempercepat penuh-nya TPA.
+        </p>
+      </section>
+      <section class="fact3">
+        <img src="assets/image/water-pollution.png" alt="water pollution" />
+        <h3>Sekitar 350 Ribu Ton Masuk ke Laut</h3>
+        <p>
+          Indonesia menyumbang sekitar 350 ribu ton sampah plastik ke laut setiap tahun, menjadikannya penyumbang sampah plastik laut terbesar kedua di dunia, setelah Tiongkok. 
+        </p>
+      </section>
+    </article>
+    
+    <section class="call-to-action">
+      <h2>Perlu Tindakan Segera</h2>
+      <p>
+        Dengan pertumbuhan populasi dan konsumsi yang terus meningkat, Indonesia perlu segera mengatasi masalah sampah. Memilah sampah organik dan anorganik adalah langkah awal yang penting untuk mengurangi dampak lingkungan.
+      </p>
+    </section>
+    
     <section class="organic" id="organic">
       <h1>Which one is it?</h1>
-      <div class="organic-img">
-        <img src="" alt="">
-      </div>
     </section>
 
-    <div class="hero-img" id="preview">
-      <img src="assets/image/kitten.jpeg" alt="">
+    <div class="buttons">
+      <button id="org-btn">Organik</button>
+      <button id="anorg-btn">Anorganik</button>
     </div>
-  </main>
+
+    <div class="slider">
+      <div class="slides" id="slides">
+        <div class="card">
+          <img src="assets/image/organic.jpeg" alt="Kitten 1" />
+        </div>
+        <div class="card">
+          <img src="assets/image/organic.jpeg" alt="Kitten 2" />
+          <h3>Kitten 2</h3>
+          <p>Ini gambar anak kucing lucu nomor 2.</p>
+        </div>
+      </div>
+    </div>
 
   <footer>
     <div class="row">
@@ -80,6 +126,6 @@
     </div>
   </footer>
 
-
+<script src="assets/js/script.js"></script>
 </body>
 </html>
