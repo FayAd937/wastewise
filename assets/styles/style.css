@@ -1,93 +1,103 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'poppins', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Lora', sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 body, html {
-  font-family: Arial, sans-serif;
-  height: 100%;
+    height: 100%;
 }
 
-.navbar {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  padding: 20px 50px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  position: fixed;
-  top: 0;
-  z-index: 10;
-  gap: 50px;
+nav {
+    width: 100%;
+    padding: 20px 50px;
+
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    gap: 1rem;    
 }
 
-.nav-logo a {
-  font-size: 24px;
-  font-weight: bold;
-  color: #67AE6E;
-  text-decoration: none;
+nav a {
+    font-size: 18px;
+    
+    color: #333;
+    font-weight: 500;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 4em;
+.logo {
+    font-weight: bold;
+    color: #67AE6E;
 }
 
+.nav-links,
 .nav-auth {
-  list-style: none;
-   display: flex;
-   gap: 2em;
+    list-style: none;
+    display: flex;
+    gap: 2em;
 }
 
-.nav-links li a,
-.nav-auth li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
+a:hover {
+    color: #67AE6E;
 }
 
-.nav-links li a:hover,
-.nav-auth li a:hover {
-  color: #67AE6E;
+.nav-auth a {
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.sign-up {
+    background-color: #ccc;
+}
+
+.sign-up:hover {
+    background-color: #adacac;
+    color: #000;
 }
 
 .landing-page {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100vh;
-  padding: 120px 50px 50px;
-  background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 120px 50px 50px;
+    background-color: #fff;
 }
 
 .text-content {
-  max-width: 40%;
+    max-width: 40%;
 }
 
 .text-content h1 {
-  font-size: 5em;
-  color: #1d1d1d;
-  margin-bottom: 20px;
-  line-height: 1.2;
+    font-size: 5em;
+    color: #1d1d1d;
+    margin-bottom: 20px;
+    line-height: 1.2;
 }
 
 .text-content p {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 30px;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
 }
 
 .text-content button {
-  padding: 12px 24px;
-  font-size: 16px;
-  background-color: #67AE6E;
-  color: white;
-  border: none;
-  border-radius: 100px;
-  cursor: pointer;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #67AE6E;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
 }
 
 .text-content button:hover {
@@ -96,121 +106,127 @@ body, html {
 }
 
 .image-content {
-  max-width: 50%;
+    max-width: 50%;
 }
 
 .image-content img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
-main article {
-   display: flex;
-   flex-direction: row;
-   padding: 0 43px;
-   background-color: #67AE6E;
-   justify-items: center;
-   margin: 10px 0;
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 kolom yang sama besar */
+    grid-template-rows: auto; /* 2 baris (tingginya otomatis) */
+    background-color: #67AE6E;
+}
+article section {
+    padding: 20px;
 }
 
-/* main article h3 {
-   color: white;
+.fact-middle {
+    background-color: #328E6E;
 }
 
-main article p {
-   color: white;
-} */
+/* CSS Flex */
+/* article {
+    display: flex;
+    flex-direction: row;
+    padding: 0 43px;
+    background-color: #67AE6E;
+    justify-items: center;
+    margin: 10px 0;
+}
 
 section.fact1 {
-   flex: 2;
-   margin-left: 300px;
-   padding: 45px;
-   text-align: right;
-   background-color: #67AE6E ;
-   margin-left: 0;
+    flex: 2;
+    margin-left: 300px;
+    padding: 45px;
+    text-align: right;
+    background-color: #67AE6E ;
+    margin-left: 0;
 }
 
 section.fact2 {
-   flex: 1;
-   padding: 45px;
-   background-color: #328E6E;
+    flex: 1;
+    padding: 45px;
+    background-color: #328E6E;
 }
 
 section.fact3 {
-   flex: 2;
-   padding: 45px;
-   text-align: left;
-   background-color: #67AE6E ;
-}
+    flex: 2;
+    padding: 45px;
+    text-align: left;
+    background-color: #67AE6E ;
+} */
 
-.fact1 img, 
-.fact2 img, 
-.fact3 img {
-   width: 100px;
-   display: block;
-   margin: 0 auto;
+section img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
 }
 
 .call-to-action {
-   background-color: #67AE6E;
-   padding: 50px 0;
-   text-align: center;
-   margin-bottom: 50px;
+    background-color: #67AE6E;
+    padding: 50px 0;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 10px;
 }
 
 .call-to-action p {
-   width: 70vw;
-   justify-self: center;
-   align-self: center;
+    width: 70vw;
+    justify-self: center;
+    align-self: center;
 }
 
 .slider {
-   width: 800px;
-   height: 70vh;
-   overflow: hidden;
-   margin: 30px auto;
-   border: 1px solid #ccc;
-   border-radius: 8px;
+    max-width: 800px;
+    height: 70vh;
+    overflow: hidden;
+    margin: 30px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 .slides {
-   display: flex;
-   transition: transform 0.5s ease;
+    display: flex;
+    transition: transform 0.5s ease;
 }
 .card {
-   height: 70vh;
-   flex: 0 0 800px;
-   box-sizing: border-box;
-   text-align: center;
+    height: 70vh;
+    flex: 0 0 800px;
+    box-sizing: border-box;
+    text-align: center;
 }
 .card img {
-   width: 800px;
-   height: 70vh;
-   object-fit: cover;
-   border-radius: 8px;
+    width: 800px;
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .buttons {
-   text-align: center;
-   margin-top: 15px;
+    text-align: center;
+    margin-top: 15px;
 }
 button {
-   background: white;
-   color: black;
-   border: none;
-   padding: 10px 15px;
-   margin: 0 15px;
-   border-radius: 100px;
-   cursor: pointer;
-   font-size: 1.3em;
+    background: white;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 15px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 1.3em;
 }
 button:hover {
-   color: #90C67C;
-   transition: background-color 0.3s ease;
+    color: #90C67C;
+    transition: background-color 0.3s ease;
 }
 
 button.active {
-   background-color: #90C67C;
-   color: white;
+    background-color: #90C67C;
+    color: white;
 }
 
 main {
@@ -228,87 +244,87 @@ main .hero-img img{
 }
 
 footer {
-   background-color: #328E6E;
-   display: flex;
-   flex-direction: column;
+    background-color: #328E6E;
+    display: flex;
+    flex-direction: column;
 }
 
 footer a {
-   text-decoration: none;
-   color: white;
+    text-decoration: none;
+    color: white;
 }
 
 footer a:hover {
-   color: #8D9762;
+    color: #8D9762;
 }
 
 footer p {
-   font-size: clamp(0em, 5vw, 0.7em);
+    font-size: clamp(0em, 5vw, 0.7em);
 }
 
 footer .row{
-   display: flex;
-   gap: 2em;
-   
-   padding: 10px;
-   max-width: 100%;
+    display: flex;
+    gap: 2em;
 
-   font-size: clamp(0em, 5vw, 1.5em);
-   color: white;
-   justify-content: space-between;
-   margin: 0 30px 0 30px;
+    padding: 10px;
+    max-width: 100%;
+
+    font-size: clamp(0em, 5vw, 1.5em);
+    color: white;
+    justify-content: space-between;
+    margin: 0 30px 0 30px;
 }
 
 footer .row a,
 footer .row span {
-   font-size: clamp(0em, 5vw, 0.7em);
+    font-size: clamp(0em, 5vw, 0.7em);
 }
 
 footer .row h4{
-   margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 footer .row span{
-   margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 footer .footer-desc {
-   margin-top: 0;
+    margin-top: 0;
 }
 
 footer .footer-desc a {
-   display: block;
+    display: block;
 
 }
 
 footer a.contact {
-   font-size: clamp(0em, 5vw, 3em);
-   block-size: 7em;
+    font-size: clamp(0em, 5vw, 3em);
+    block-size: 7em;
 }
 
 footer .footer-contact {
-   gap: 2em;
-   max-width: 100%;
-   font-size: clamp(0em, 5vw, 1.5em);
-   text-align: center;
+    gap: 2em;
+    max-width: 100%;
+    font-size: clamp(0em, 5vw, 1.5em);
+    text-align: center;
 }
 
 footer .row .footer-contact a {
-   font-size: clamp(0em, 5vw, 1em);
-   padding: 0 10px;
+    font-size: clamp(0em, 5vw, 1em);
+    padding: 0 10px;
 }
 
 .footer-details {
-   margin-left: 30px;
-   display: flex;
-   flex-direction: column;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 footer .copyright {
-   color: white;
-   padding: 40px;
+    color: white;
+    padding: 40px;
 }
 
 footer .copyright span{
-   font-size: clamp(0px, 5vw, 12px);
+    font-size: clamp(0px, 5vw, 12px);
 }

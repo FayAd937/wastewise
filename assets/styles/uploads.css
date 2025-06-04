@@ -1,55 +1,28 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'poppins', sans-serif;
-}
-
-body, html {
-  font-family: Arial, sans-serif;
-  height: 100%;
-}
-
-.navbar {
-  width: 100%;
+main {
+  height: 100vh;
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 20px 50px;
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  position: fixed;
-  top: 0;
-  z-index: 10;
-  gap: 50px;
 }
 
-.nav-logo a {
-  font-size: 24px;
-  font-weight: bold;
-  color: #67AE6E;
-  text-decoration: none;
-}
-
-.nav-links {
-  list-style: none;
+.uploads {
   display: flex;
-  gap: 4em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.nav-auth {
-  list-style: none;
-   display: flex;
-   gap: 2em;
+.uploads button {
+  background-color: #1a7bbf;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin: 10px;
 }
 
-.nav-links li a,
-.nav-auth li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-
-.nav-links li a:hover,
-.nav-auth li a:hover {
-  color: #67AE6E;
+.uploads button:hover {
+  background-color: #24a0ed;
+  transition: background-color 0.3s ease;
 }

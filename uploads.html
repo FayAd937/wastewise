@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Waste Wise</title>
-    <link rel="stylesheet" href="assets/styles/uploads.css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/uploads.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
@@ -13,28 +14,19 @@
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <div class="nav-logo"><a href="index.html">WasteWise</a></div>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="upload.html">Uploads</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-
-        <ul class="nav-auth">
-          <li><a href="login.html">Login</a></li>
-          <li><a href="signup.html">Sign Up</a></li>
-        </ul>
-      </nav>
+      <nav-bar></nav-bar>
     </header>
 
     <main>       
       <section class="uploads">
         <h2>Upload an image here</h2>
+        <input type="file" name="upload" class="uploadFile" id="uploadFile" hidden/>
+        <button id="uploadBtn">Upload Image</button>
       </section>
     </main>
 
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/upload.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
   </body>
 </html>

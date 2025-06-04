@@ -1,3 +1,4 @@
+// Slider
 const slides = document.getElementById('slides');
 const totalCards = slides.children.length;
 
@@ -20,4 +21,11 @@ anorgBtn.addEventListener('click', () => {
     let cardIndex = 1;
     slides.style.transform = `translateX(${-cardIndex * 800}px)`;
     setActiveButton(anorgBtn);
+});
+
+// Read More Button
+const readMore = document.getElementById('readMore');
+const fact = document.querySelector('article')
+readMore.addEventListener('click', () => {
+    fact.scrollIntoView({behavior: "smooth"});
 });
